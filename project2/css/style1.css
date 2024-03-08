@@ -1,0 +1,164 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: helvetica,arial,sans-serif;
+    font-size: 16px;
+    font-weight:normal;
+    line-height:1.4;
+    color: #212121;
+    background-image: linear-gradient(to right,#10c9c3,white);
+}
+
+header{
+    height: 100vh;
+    width: 100%
+    background url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container{
+    width:90%
+    margin-auto;
+}
+
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 35px;
+
+}
+
+div a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color:black;
+    
+}
+
+nav a{
+    display:inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight:bold;
+    margin-left:30px;
+    color: #191919;
+}
+
+nav a:hover{
+    color: #2ccaca;
+    
+}
+
+#header-text{
+    width:500px;
+    position:absolute;
+    top:500px;
+    right:140px;
+    transform:translateY(-50%);
+}
+
+#header-text h1{
+    font-size: 38px;
+    color:#191919;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+
+}
+
+#header-text p{
+    font-size: 18px;
+    color: #787878;
+    margin-bottom: 30px;
+
+}
+
+#header-text button{
+    outline: none;
+    background: #10c9c3;
+    color: rgb(5, 5, 5);
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    padding: 18px 45px;
+    cursor:pointer;
+    border-radius: 25px;
+
+}
+
+#header-text button:hover{
+   background: transparent;
+   color: #000000;
+   border:2px solid #000000;
+   border-radius: 25px;
+}
+
+
+
+
+
+@media(max-width:768px){
+    #navbar{
+        display:block;
+    }
+
+#navbar logo{
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+nav{
+    text-align: center;
+
+}
+
+nav a{
+    margin:5px 10px;
+}
+#header-text{
+    right:100px;
+
+}
+
+}
+
+@media (max-width:600px) {
+    header{
+        background-position:-340px center;
+    }
+
+    #header-text{
+        width: 90%;
+        margin:auto;
+        top:55%;
+        right:0px;
+        left:0px;
+    }
+
+    #header-text h1{
+        font-size: 28px;
+
+    }
+   
+    #header-text p{
+        font-size: 16px;
+  
+    }
+    #header-text button{
+        padding: 10px 35px;
+    }
+
+
+}
